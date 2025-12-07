@@ -1,0 +1,282 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-size: 62,5%;
+}
+
+body{
+    background-color: #FFFFFF;
+}
+
+header{
+    background-color: #5E8DD9;
+    color: #FFFFFF;
+    padding: 20px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+
+
+main{
+   margin: 15px;
+}
+
+main section{
+    padding: 30px;
+}
+
+.imgBannerIndex {
+    width: 100%;
+}
+
+
+.headingsSections{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.headingsSections div{
+    width: 100%;
+    margin: 0 10px;
+}
+
+.headingsSections div {
+    width: 100%;
+    margin: 0 10px;
+}
+
+
+.navmenu{
+    background-color: #5E8DD9;
+    
+}
+
+.nav-link{
+    color: white;
+    font-family: "Poppins", sans-serif;
+}
+
+hr{
+    border: none;
+    background-color: #0033A0;
+    height: 1px;
+}
+
+.articleProductos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.articleProductos img {
+    max-width: 100%;
+}
+
+.sectionProductos{
+    margin-bottom: 30px;
+}
+
+.sectionProductos article{
+    width: 30%;
+    margin: 10px 10px;
+    padding: 15px;
+    border: #5E8DD9 2px solid;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.sectionProductos button{
+    background-color: #E06666;
+    color: #FFFFFF;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-top: 10px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+}
+
+.secctionTextos{
+    padding: 30px; 
+    margin-bottom: 20px;
+    font-family: "Poppins", sans-serif;
+}
+
+.sectionTextos h3 {
+    color: #0033A0; 
+    font-weight: 500;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+.sectionTextos p {
+    color: #333333;
+    font-weight: 300;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.sectionTextos p br + * { 
+    /* estilizar los ítems que están después de un salto de línea */
+    margin-left: 20px;
+    display: block;
+}
+
+.sectionTextos form {
+    max-width: 600px;
+    margin: 30px;
+    padding: 30px;
+    border: 1px solid #5E8DD9;
+    border-radius: 8px;
+}
+
+.form-control {
+    font-family: "Poppins", sans-serif;
+}
+
+/* Estilo cuando el input está enfocado (al hacer clic/tabulador) */
+.form-control:focus {
+    /* Anula el borde azul por defecto de Bootstrap */
+    border-color: #0033A0;
+}
+
+.form-label, .form-check-label {
+    color: #0033A0; /* Color azul oscuro para el texto de la etiqueta */
+    font-weight: 500;
+    font-family: "Poppins", sans-serif;
+}
+
+.form-floating > label {
+    color: #0033A0;
+
+}
+
+.buttonSuscribir{
+    background-color: #E06666;
+    color: #FFFFFF;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-top: 10px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+h1{
+    font-weight: 900;
+}
+
+h1, h2, h3, h4{
+    color: #0033A0;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+}
+
+p, a{
+    font-family: "Poppins", sans-serif;
+}
+
+footer{
+    background-color: #5E8DD9;
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 30px;
+    text-align: center;
+}
+
+footer h2{
+    margin-bottom: 15px;
+}
+
+footer ul{
+    display: flex;
+    flex-direction: row;
+}
+
+footer a{
+    color:#FFFFFF;
+    text-decoration: none;
+}
+
+footer li{
+    margin: 15px;
+}
+
+@media (max-width:720px){
+    header{
+        flex-direction: column;
+        align-items: center;
+    }
+    header h1{
+        margin-bottom: 20px;
+    }
+    
+    .navmenu ul{
+        flex-direction: column;
+    }
+
+    .articleProductos{
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .articleProductos article{
+        width: 75%;
+    }    
+}
+
+@media (max-width: 991.98px) {
+    .navbar .container-fluid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar-toggler {
+    /* Color del borde */
+    border-color: #FFFFFF; 
+    border-width: 1.5px; 
+    border-radius: 5px;
+    }
+
+    .navbar-toggler:focus {
+    box-shadow: none;
+    outline: 0;
+    }
+
+
+}
+

@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rozha+One&display=swap');
 
 *{
     margin: 0;
@@ -14,11 +15,11 @@ body{
 }
 
 header{
-    background-color: #5E8DD9;
-    color: #FFFFFF;
+    background-color: #FFFFFF;
+    color: #7d98ef;
     padding: 20px 30px;
-    display: flex;
-    flex-direction: column;
+    /*display: flex;*/
+    /*flex-direction: column;*/
     justify-content: space-between;
     align-items: center;
     text-align: center;
@@ -29,10 +30,10 @@ nav{
     align-items: center;
 }
 
-nav a {
+/*nav a {
     color: #ffffff;
     text-decoration: none;
-}
+} */
 
 ul{
     list-style: none;
@@ -70,20 +71,22 @@ main section{
     margin: 0 10px;
 }
 
-
-.navmenu{
-    background-color: #5E8DD9;
-    
+.nav-link{
+    color: #7d98ef;
+    font-family: "Poppins", sans-serif;
 }
 
-.nav-link{
-    color: white;
-    font-family: "Poppins", sans-serif;
+.nav-link:focus, .nav-link:hover{
+    color:#01147d
+}
+
+.navbar-brand{
+    margin: 0;
 }
 
 hr{
     border: none;
-    background-color: #0033A0;
+    background-color: #01147d;
     height: 1px;
 }
 
@@ -106,7 +109,7 @@ hr{
     width: 30%;
     margin: 10px 10px;
     padding: 15px;
-    border: #5E8DD9 2px solid;
+    border: #7d98ef 2px solid;
     border-radius: 20px;
     display: flex;
     flex-direction: column;
@@ -115,14 +118,14 @@ hr{
 }
 
 .sectionProductos button{
-    background-color: #E06666;
-    color: #FFFFFF;
+    background-color: #7d98ef;
+    color: white;
     border: none;
     padding: 10px 20px;
     border-radius: 5px;
     margin-top: 10px;
     font-family: "Poppins", sans-serif;
-    font-weight: 500;
+    font-weight: 300;
 }
 
 .secctionTextos{
@@ -132,7 +135,7 @@ hr{
 }
 
 .sectionTextos h3 {
-    color: #0033A0; 
+    color: #01147d; 
     font-weight: 500;
     margin-top: 30px;
     margin-bottom: 15px;
@@ -155,7 +158,7 @@ hr{
     max-width: 600px;
     margin: 30px;
     padding: 30px;
-    border: 1px solid #5E8DD9;
+    border: 1px solid #7d98ef;
     border-radius: 8px;
 }
 
@@ -163,25 +166,25 @@ hr{
     font-family: "Poppins", sans-serif;
 }
 
-/* Estilo cuando el input está enfocado (al hacer clic/tabulador) */
+/* Estilo cuando el input está enfocado (al hacer click/tabulador) */
 .form-control:focus {
     /* Anula el borde azul por defecto de Bootstrap */
-    border-color: #0033A0;
+    border-color: #01147d;
 }
 
 .form-label, .form-check-label {
-    color: #0033A0; /* Color azul oscuro para el texto de la etiqueta */
+    color: #01147d; /* Color azul oscuro para el texto de la etiqueta */
     font-weight: 500;
     font-family: "Poppins", sans-serif;
 }
 
 .form-floating > label {
-    color: #0033A0;
+    color: #01147d;
 
 }
 
 .buttonSuscribir{
-    background-color: #E06666;
+    background-color: #bd2204;
     color: #FFFFFF;
     border: none;
     padding: 10px 20px;
@@ -195,11 +198,13 @@ hr{
 }
 
 h1{
-    font-weight: 900;
+    color: #01147d;
+    font-family: "Rozha One";
+    font-weight: 300;
 }
 
-h1, h2, h3, h4{
-    color: #0033A0;
+h2, h3, h4{
+    color: #01147d;
     font-family: "Poppins", sans-serif;
     font-weight: 300;
 }
@@ -209,7 +214,7 @@ p, a{
 }
 
 footer{
-    background-color: #5E8DD9;
+    background-color: #7d98ef;
     color: #FFFFFF;
     display: flex;
     flex-direction: column;
@@ -219,12 +224,17 @@ footer{
 }
 
 footer h2{
+    font-family: "Rozha One";
     margin-bottom: 15px;
 }
 
 footer ul{
     display: flex;
     flex-direction: row;
+}
+
+.navfooter{
+    padding: 0;
 }
 
 footer a{
@@ -237,10 +247,7 @@ footer li{
 }
 
 @media (max-width:720px){
-    header{
-        flex-direction: column;
-        align-items: center;
-    }
+    
     header h1{
         margin-bottom: 20px;
     }
@@ -256,18 +263,36 @@ footer li{
     
     .articleProductos article{
         width: 75%;
+    }
+
+    /*footer{
+        align-items: center;
+        text-align: center;
+    }*/
+
+    footer ul{/*para alinear al centro y en columna los ul*/
+        flex-direction: column;
+        text-align: center;
     }    
 }
 
 @media (max-width: 991.98px) {
-    .navbar .container-fluid {
+    header{
+        display: flex;
         flex-direction: column;
         align-items: center;
     }
 
+    .navbar .container-fluid {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+    }
+
     .navbar-toggler {
     /* Color del borde */
-    border-color: #FFFFFF; 
+    border-color: #7d98ef; 
     border-width: 1.5px; 
     border-radius: 5px;
     }
@@ -276,7 +301,5 @@ footer li{
     box-shadow: none;
     outline: 0;
     }
-
-
 }
 

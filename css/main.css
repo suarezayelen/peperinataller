@@ -1,0 +1,330 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;500;700&family=Rozha+One&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62, 5%;
+}
+
+header {
+  background-color: #FFFFFF;
+  color: #7d98ef;
+  padding: 20px 30px;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+}
+
+body {
+  background-color: #FFFFFF;
+  font-family: "Poppins", sans-serif;
+}
+
+main {
+  margin: 15px;
+}
+
+main section {
+  padding: 30px;
+}
+
+h2 {
+  color: #01147d;
+  font-family: "Rozha One", serif;
+  font-weight: 300;
+}
+
+h3, h4 {
+  color: #01147d;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+}
+
+p, a {
+  font-family: "Poppins", sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+.imgBannerIndex {
+  width: 100%;
+}
+
+footer {
+  background-color: #7d98ef;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.headingsSections {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+.headingsSections hr {
+  border: none;
+  background-color: #01147d;
+  margin: 1rem auto;
+  width: 50px;
+  height: 1px;
+}
+
+.sectionProductos {
+  margin-bottom: 30px;
+}
+.sectionProductos article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 30%;
+  margin: 10px 10px;
+  padding: 15px;
+  border: #7d98ef 2px solid;
+  border-radius: 20px;
+}
+.sectionProductos button {
+  font-family: "Poppins", sans-serif;
+  background-color: #7d98ef;
+  color: #FFFFFF;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin-top: 10px;
+  font-weight: 300;
+  cursor: pointer;
+}
+.sectionProductos button:hover {
+  background-color: #01147d;
+}
+
+.sectionTextos {
+  font-family: "Poppins", sans-serif;
+  padding: 30px;
+  margin-bottom: 20px;
+}
+.sectionTextos h3 {
+  font-family: "Poppins", sans-serif;
+  color: #01147d;
+  font-weight: 500;
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+.sectionTextos p {
+  color: #333333;
+  font-weight: 300;
+  line-height: 1.8;
+  overflow-wrap: break-word; /* Rompe el enlace solo si es necesario */
+  word-break: break-word;
+}
+.sectionTextos p br + * {
+  /* estilizar los ítems que están después de un salto de línea */
+  margin-left: 20px;
+  display: block;
+}
+
+.articleProductos {
+  color: #333333;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  font-weight: 300;
+  margin-top: 20px;
+}
+.articleProductos img {
+  max-width: 100%;
+}
+
+.sectionForm {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 30px;
+  border: 1px solid #7d98ef;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+}
+
+/* Estilo cuando el input está enfocado (al hacer click/tabulador) */
+.form-control {
+  font-family: "Poppins", sans-serif;
+}
+.form-control:focus {
+  border-color: #01147d; /* Anula el borde azul por defecto de Bootstrap */
+}
+
+/* Color azul oscuro para el texto de la etiqueta */
+.form-label, .form-check-label {
+  color: #01147d;
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
+}
+
+.form-floating > label {
+  color: #01147d;
+}
+
+.buttonSuscribir {
+  background-color: #bd2204;
+  color: #FFFFFF;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-family: "Poppins", sans-serif;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.buttonSuscribir:hover {
+  filter: brightness(0.9);
+}
+.buttonSuscribir {
+  font-weight: 500;
+  margin-top: 10px;
+  align-self: center;
+}
+
+nav.navbar {
+  background-color: #FFFFFF;
+}
+nav.navbar .navbar-brand {
+  margin: 0;
+}
+nav.navbar .navbar-brand h1 {
+  font-family: "Rozha One", serif;
+  color: #01147d;
+  font-weight: 300;
+}
+nav.navbar .nav-link {
+  color: #7d98ef;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  transition: all 0.3s ease;
+}
+nav.navbar .nav-link:hover {
+  color: #01147d;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #7d98ef;
+  color: #FFFFFF;
+  padding: 20px 30px;
+  flex-direction: column;
+  text-align: center;
+}
+footer ul {
+  display: flex;
+  flex-direction: row;
+}
+footer li {
+  margin: 15px;
+}
+footer h2 {
+  font-family: "Rozha One", serif;
+  margin-bottom: 15px;
+}
+footer .navfooter {
+  list-style: none;
+  padding: 0;
+}
+footer .navfooter a {
+  color: #FFFFFF;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+footer .navfooter a:hover {
+  color: #01147d;
+}
+
+@media (max-width: 720px) {
+  header h1 {
+    margin: 0 auto 10px auto;
+    text-align: center;
+    font-size: 1.5rem;
+    width: 100%;
+  }
+  .navmenu ul {
+    display: flex;
+    flex-direction: column;
+  }
+  .navbar .container-fluid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .navbar-brand {
+    margin-right: 0;
+    width: 100%;
+    display: block;
+  }
+  .articleProductos {
+    flex-direction: column;
+    align-items: center;
+  }
+  .articleProductos article {
+    width: 75%;
+  }
+  footer ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}
+@media (max-width: 991.98px) {
+  header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  header h1 {
+    margin: 0 auto 10px auto;
+    text-align: center;
+    font-size: 1.5rem;
+    width: 100%;
+  }
+  .navbar .container-fluid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 0;
+  }
+  /*menú de hamburguesa*/
+  .navbar-toggler {
+    border-color: #7d98ef;
+    border-width: 1.5px;
+    border-radius: 5px;
+  }
+  .navbar-toggler:focus {
+    box-shadow: none;
+    outline: 0;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

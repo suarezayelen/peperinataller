@@ -1,0 +1,83 @@
+.headingsSections {
+        @include flex-col-center;
+        justify-content: space-between;
+        margin-bottom: 30px;
+
+        hr {
+        border:none;
+        background-color: $color-oscuro;
+        margin: 1rem auto;
+        width: 50px;
+        height: 1px;
+}
+}
+
+.sectionProductos{
+    margin-bottom: 30px;
+
+    article{
+        @include flex-col-center;
+        width: 30%;
+        margin: 10px 10px;
+        padding: 15px;
+        border: $color-primario 2px solid;
+        border-radius: 20px;
+    }
+    
+    button{
+        font-family: $fuente-principal;
+        background-color: $color-primario;
+        color: $color-fondo;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        margin-top: 10px;
+        font-weight: 300;
+        cursor: pointer;
+        &:hover { background-color: $color-oscuro; }
+    }
+}
+
+.sectionTextos{
+        font-family: $fuente-principal;
+        padding: 30px; 
+        margin-bottom: 20px;
+
+    h3{
+        font-family: $fuente-principal;
+        color: $color-oscuro; 
+        font-weight: 500;
+        margin-top: 30px;
+        margin-bottom: 15px;
+    }
+
+    p{
+    color: $color-texto-p;
+    font-weight: 300;
+    line-height: 1.8;
+    overflow-wrap: break-word; /* Rompe el enlace solo si es necesario */
+    word-break: break-word;   
+    }
+
+    p br + * { 
+    /* estilizar los ítems que están después de un salto de línea */
+    margin-left: 20px;
+    display: block;
+    }
+    
+}
+
+.articleProductos {
+    color: $color-texto-p;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-weight: 300;
+    margin-top: 20px;
+
+    img {
+        max-width: 100%;
+    }
+}    
+
+

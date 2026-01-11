@@ -1,0 +1,37 @@
+// formulario Bootstrap
+.sectionForm{
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 30px;
+        border: 1px solid $color-primario;
+        border-radius: 8px;
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+    }
+
+/* Estilo cuando el input está enfocado (al hacer click/tabulador) */
+.form-control {
+    font-family: $fuente-principal;
+    &:focus {
+        border-color: $color-oscuro; /* Anula el borde azul por defecto de Bootstrap */
+    }
+}
+/* Color azul oscuro para el texto de la etiqueta */
+.form-label, .form-check-label {
+    color: $color-oscuro;
+    font-weight: 500;
+    font-family: $fuente-principal;
+}
+
+.form-floating > label {
+    color: $color-oscuro;
+
+}
+
+.buttonSuscribir {
+    @include estilo-boton($color-acento);
+    font-weight: 500;
+    margin-top: 10px;
+    align-self: center;
+}

@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;500;700&family=Rozha+One&display=swap');
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; // para que los paddings no rompan el tamaño
+}
+
+html {
+    font-size: 62,5%; // configuración original
+}
+
+header{
+    background-color: $color-fondo;
+    color: $color-primario;
+    padding: 20px 30px;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+}
+
+body {
+    background-color: $color-fondo;
+    font-family: 'Poppins', sans-serif;
+}
+
+main {
+    margin: 15px;
+}    
+
+main section {
+    padding: 30px;
+}
+
+h2{
+    color: $color-oscuro;
+    font-family: $fuente-titulos;
+    font-weight: 300;
+}
+
+h3, h4{
+    color: $color-oscuro;
+    font-family: $fuente-principal;
+    font-weight: 300;
+}
+
+p, a {
+    font-family: $fuente-principal;
+}
+
+ul {
+    list-style: none;
+}
+
+
+
+.imgBannerIndex {
+    width: 100%;
+}
+
+footer {
+    background-color: $color-primario;
+    @include flex-col-center;
+    color: $color-fondo;
+}

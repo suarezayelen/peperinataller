@@ -1,0 +1,65 @@
+nav.navbar {
+    background-color: $color-fondo;
+
+    .navbar-brand{
+        margin: 0;
+    }
+
+    .navbar-brand h1 {
+        font-family: $fuente-titulos;
+        color: $color-oscuro;
+        font-weight: 300;     
+    }
+
+    .nav-link {
+        color: $color-primario;
+        font-family: $fuente-principal;
+        font-weight: 300;
+        transition: all 0.3s ease;
+            // Esto asegura que el hover funcione sobre Bootstrap
+            &:hover {
+                color: $color-oscuro; // Se pone celeste/azul
+            }
+    }   
+}
+
+
+
+footer {
+    @include flex-center;
+    background-color: $color-primario;
+    color: $color-fondo;
+    padding: 20px 30px;
+    flex-direction: column;
+    text-align: center;
+
+    ul {
+    display: flex;
+    flex-direction: row;
+    }
+
+    li{
+    margin: 15px;
+}
+
+    h2 {
+        font-family: $fuente-titulos;
+        margin-bottom: 15px;
+    }
+
+    .navfooter {
+        list-style: none;
+        padding: 0;
+
+        a {
+            color: $color-fondo;
+            font-family: $fuente-principal;
+            font-weight: 300;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            &:hover { 
+            color: $color-oscuro;
+        }
+        }
+    }
+}

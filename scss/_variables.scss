@@ -1,0 +1,42 @@
+// FUENTES
+$fuente-principal: "Poppins", sans-serif;
+$fuente-titulos: "Rozha One", serif;
+
+// COLORES
+$color-primario: #7d98ef;    // Azul claro
+$color-oscuro: #01147d;      // Azul oscuro
+$color-texto-p: #333333;     // Gris de los párrafos
+$color-fondo: #FFFFFF;
+$color-acento: #bd2204;      // Rojo del botón suscribir
+
+// BREAKPOINTS
+$tablet: 720px;
+$desktop-sm: 991.98px;
+
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+@mixin flex-col-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+@mixin estilo-boton($bg, $color: $color-fondo) {
+    background-color: $bg;
+    color: $color;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-family: $fuente-principal;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    &:hover {
+        filter: brightness(0.9);
+    }
+}

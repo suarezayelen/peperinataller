@@ -79,9 +79,10 @@ footer {
   margin-bottom: 30px;
 }
 .headingsSections hr {
-  border: none;
   background-color: #01147d;
+  color: #01147d;
   margin: 1rem auto;
+  opacity: 1;
   width: 50px;
   height: 1px;
 }
@@ -262,7 +263,7 @@ footer .navfooter a:hover {
   header h1 {
     margin: 0 auto 10px auto;
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 1.1rem;
     width: 100%;
   }
   .navmenu ul {
@@ -280,6 +281,9 @@ footer .navfooter a:hover {
     margin-right: 0;
     width: 100%;
     display: block;
+  }
+  h2 {
+    font-size: 1rem;
   }
   .articleProductos {
     flex-direction: column;
@@ -305,7 +309,7 @@ footer .navfooter a:hover {
   header h1 {
     margin: 0 auto 10px auto;
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     width: 100%;
   }
   .navbar .container-fluid {
@@ -324,6 +328,15 @@ footer .navfooter a:hover {
   .navbar-toggler:focus {
     box-shadow: none;
     outline: 0;
+  }
+  h2 {
+    font-size: 1.1rem;
+  }
+  h3, h4 {
+    font-size: 1rem;
+  }
+  p {
+    font-size: 0.9rem;
   }
 }
 

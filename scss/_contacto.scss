@@ -30,7 +30,7 @@
 }
 
 .buttonSuscribir {
-    @include estilo-boton($color-acento);
+    @include estilo-boton($color-primario);
     font-weight: 500;
     margin-top: 10px;
     align-self: center;

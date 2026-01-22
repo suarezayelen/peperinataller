@@ -35,8 +35,5 @@ $desktop-sm: 991.98px;
     border-radius: 5px;
     font-family: $fuente-principal;
     cursor: pointer;
-    transition: background-color 0.3s ease;
-    &:hover {
-        filter: brightness(0.9);
-    }
+    &:hover {background-color: $color-oscuro;}
 }

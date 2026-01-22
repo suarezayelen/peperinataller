@@ -26,12 +26,7 @@
     }
     
     button{
-        font-family: $fuente-principal;
-        background-color: $color-primario;
-        color: $color-fondo;
-        border: none;
-        padding: 10px 20px;
-        border-radius: 5px;
+        @include estilo-boton($color-primario);
         margin-top: 10px;
         font-weight: 300;
         cursor: pointer;
